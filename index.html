@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock Paper Scissors</title>
+    <link rel="shortcut icon" href="./public/img/gaming-pad-alt-1-svgrepo-com (1).svg" type="image/x-icon">
+    <link rel="stylesheet" href="./public/style/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@900&display=swap" rel="stylesheet">
+    <script src="./script.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <h1 data-header>Rock Paper Scissors</h1><br><br>
+        <div class="game-board">
+            <div class="profiles">
+
+                <div class="user-profile">
+                    <div class="img-container">
+                        <img src="./public/img/question-mark-circle-svgrepo-com.svg" alt="img" draggable="false">
+                    </div>
+                    <p>User</p>
+                </div>
+                <p style="color: whitesmoke;">:</p>
+                <div class="computer-profile">
+                    <div class="img-container">
+                        <img src="./public/img/question-mark-circle-svgrepo-com.svg" alt="img" draggable="false">
+                    </div>
+                    <p>Computer</p>
+                </div>
+
+            </div>
+       
+        <div class="score-board">
+               <div class="score-container">
+                    
+                        <div class="score-elem">
+                            <p><span data-userScore>0 </span> : <span data-compScore>0</span></p>
+                            <div class="info">
+                                <div>User</div>
+                                <div>Comp</div>
+                            </div>
+                        </div>
+                    
+               </div>
+        </div>
+         <div class="game-buttons" data-buttons>
+            <div id="rock">
+                <img src="./public/img/fist-svgrepo-com.svg" alt="fist">
+            </div>
+            <div id="paper">
+                <img src="./public/img/palm-svgrepo-com.svg" alt="paper">
+            </div>
+            <div id="scissors">
+                <img src="./public/img/scissors.png" alt="scissors">
+            </div>
+
+        </div>
+        </div>
+       
+        
+    </div>
+</body>
+</html>

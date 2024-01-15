@@ -1,0 +1,248 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lato', sans-serif;
+}
+
+body{
+    background: linear-gradient(to right, rgb(158, 73, 201) , rgb(35, 74, 215));
+}
+
+
+.container{
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    /* border: 2px solid red; */
+    gap: 2vw;
+}
+
+.container h1 {
+    font-size: 3vw;
+    font-weight: bolder;
+    color: whitesmoke ;
+    letter-spacing: 0.2vw;
+}
+
+.game-board{
+    width: auto;
+    height: auto;
+    /* border: 2px solid black; */
+    display: grid;
+    grid-template-rows: repeat(3,auto);
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.446) , rgba(147, 142, 142, 0.463));
+   
+    border-radius: 8px;
+    gap: 2vw;
+    padding: 1vw;
+
+    -webkit-box-shadow: 10px 10px 45px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 10px 10px 45px 0px rgba(0,0,0,0.75);
+    box-shadow: 10px 10px 45px 0px rgba(0,0,0,0.75);
+    
+
+}
+
+.game-board 
+.profiles{
+    width: 100%;
+    height: 5vw;
+    /* border: 2px solid yellow; */
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    
+}
+
+.game-board
+.profiles > p {
+    font-size: 2vw;
+    font-weight: bolder;
+}
+
+
+.profiles
+.user-profile{
+    width: 5vw;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    /* border: 2px solid black; */
+    
+}
+
+.profiles
+.user-profile > p {
+    font-size: 1vw;
+    font-weight: bolder;
+    color: whitesmoke;
+}
+
+
+.profiles
+.user-profile
+.img-container{
+    width: 5vw;
+    height: 3.2vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* border: 2px solid red; */
+}
+
+.profiles
+.user-profile
+.img-container > img{
+    width: 3vw;
+    height: 3vw;
+    border: 2px solid whitesmoke;
+    border-radius: 50%;
+    padding: 0.5vw;
+    background-color: rgba(255, 255, 255, 0.5);
+
+}
+
+.profiles
+.computer-profile{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    /* border: 2px solid black; */
+    
+}
+
+.profiles
+.computer-profile > p {
+    font-size: 1vw;
+    font-weight: bolder;
+    color: whitesmoke;
+}
+
+.profiles
+.computer-profile
+.img-container{
+    width: 5vw;
+    height: 3.2vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* border: 2px solid red; */
+}
+
+.profiles
+.computer-profile
+.img-container > img{
+    width: 3vw;
+    height: 3vw;
+    border: 2px solid whitesmoke;
+    border-radius: 50%;
+    padding: 0.5vw;
+    background-color: rgba(255, 255, 255, 0.5);
+
+}
+
+
+
+.game-buttons{
+    width: 40vw;
+    height: 3vw;
+    /* border: 2px solid green; */
+    display: grid;
+    grid-template-columns: repeat(3,auto);
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 4vw;
+
+}
+
+.game-buttons > div{
+    height: inherit;
+    /* border: 2px solid black; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.game-buttons > div > img{
+    cursor: pointer;
+    width: 2.5vw;
+    height: 2.5vw;
+    border: 2px solid whitesmoke;
+    border-radius: 50%;
+    padding: 0.5vw;
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+.score-board{
+    width: 100%;
+    min-height: 10vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* border: 2px solid red; */
+    height: auto;
+    max-height: fit-content;
+  
+}
+
+.score-board
+.score-container{
+    width: 8vw;
+    height: 5vw;
+    display: flex;
+    border: 2px solid black;
+   
+}
+
+
+.score-board
+.score-container
+.score-elem{
+    width: 10vw;
+    height: 5vw;
+    /* border: 2px solid rgb(0, 255, 221); */
+    align-items: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.score-elem
+.info{
+    width: 10vw;
+    height: 5vw;
+    /* border: 2px solid green; */
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.score-elem
+.info > div{
+    /* border: 2px solid black; */
+    background:linear-gradient(to right, rgba(0, 0, 0, 0.446) , rgba(147, 142, 142, 0.463));
+    color: whitesmoke;
+    font-size: 1vw;
+    padding: 0.2vw;
+    border-radius: 4px;
+}
+
+.score-elem p, span{
+    color: whitesmoke;
+    font-size: 1vw;
+    font-weight: bolder;
+}
+
+
+.forSpan{
+    font-size: 1vw;
+    font-weight: bolder;
+    padding-top: 1.5vw;
+    color: rgb(42, 40, 40);
+}
